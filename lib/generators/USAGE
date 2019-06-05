@@ -1,0 +1,8 @@
+Description:
+    ControllerのActionに対応したResponderを生成します。
+
+Example:
+    rails g rails_responder controller_name#index
+
+    This will create:
+        app/responders/controller_names/index_responder.rb

@@ -1,14 +1,16 @@
 # RailsResponder
-Short description and motivation.
+ControllerのActionに対応したResponderを生成します。
 
 ## Usage
-How to use my plugin.
+    rails g rails_responder controller_name#index
+    This will create:
+        app/responders/controller_names/index_responder.rb
 
 ## Installation
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'rails_responder'
+gem 'rails_responder', git: 'https://github.com/sogasusumu/rails_responder'
 ```
 
 And then execute:
