@@ -22,6 +22,12 @@ lint:
 test:
 	bundle exec rspec
 
+g:
+	spec/dummy/bin/rails g rails_responder controller_name#index
+
+d:
+	spec/dummy/bin/rails d rails_responder controller_name#index
+
 pre_commit:
 	lint
 	test
