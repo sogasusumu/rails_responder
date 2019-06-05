@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.version     = RailsResponder::VERSION
   spec.authors     = ["曽我進"]
   spec.email       = ["soga@yocto-inc.com"]
-  spec.homepage    = "https://github.com/sogasusumu/rails_responder.git"
+  spec.homepage    = "https://github.com/sogasusumu/rails_responder"
   spec.summary     = ""
   spec.description = ""
   spec.license     = "MIT"
@@ -27,6 +27,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "rails", "~> 5.2.3"
   spec.add_dependency 'contracts'
+  spec.add_runtime_dependency 'rails_const_normalizer'
 
   spec.add_development_dependency "sqlite3"
   spec.add_development_dependency 'rspec-rails'

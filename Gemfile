@@ -4,6 +4,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 # Declare your gem's dependencies in rails_responder.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
 # development dependencies will be added by default to the :development group.
+
+gem 'rails_const_normalizer', git: 'https://github.com/sogasusumu/rails_const_normalizer.git'
 gemspec
 
 # Declare any dependencies that are still in development here instead of in

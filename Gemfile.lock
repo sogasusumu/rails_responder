@@ -1,9 +1,18 @@
+GIT
+  remote: https://github.com/sogasusumu/rails_const_normalizer.git
+  revision: 6d3096bfe6827256c8e76eaa98be0519496ceb88
+  specs:
+    rails_const_normalizer (0.1.0)
+      activesupport
+      contracts
+
 PATH
   remote: .
   specs:
     rails_responder (0.1.0)
       contracts
       rails (~> 5.2.3)
+      rails_const_normalizer
 
 GEM
   remote: https://rubygems.org/
@@ -165,6 +174,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  rails_const_normalizer!
   rails_responder!
   rspec-rails
   rubocop
