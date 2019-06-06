@@ -10,7 +10,7 @@ ControllerのActionに対応したResponderを生成します。
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'rails_responder', git: 'https://github.com/sogasusumu/rails_responder'
+gem 'rails_responder', git: 'https://github.com/sogasusumu/rails_responder.git'
 ```
 
 And then execute:
