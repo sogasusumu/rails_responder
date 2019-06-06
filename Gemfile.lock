@@ -9,7 +9,7 @@ GIT
 PATH
   remote: .
   specs:
-    rails_responder (0.1.0)
+    rails_responder (0.1.1)
       contracts
       rails (~> 5.2.3)
       rails_const_normalizer
