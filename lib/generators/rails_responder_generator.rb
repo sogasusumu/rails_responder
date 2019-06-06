@@ -25,6 +25,10 @@ class RailsResponderGenerator < Rails::Generators::NamedBase
     name.to(:responder, :klass)
   end
 
+  def interactor_klass
+    name.to(:interactor, :klass)
+  end
+
   # @return [String]
   def file_name
     name.to(:responder, :file_name)

@@ -8,9 +8,9 @@ class <%= klass %>
   # attr_accessor_with_contract :property, Class Or Contract
   # attr_accessor_with_contract :name, String
 
-  Contract Hash => Any
-  def initialize(params)
-    params.each { |k, v| send(:"#{k}=", v) if respond_to?(:"#{k}=") }
+  Contract <%= interactor_klass %> => Any
+  def initialize(interactor)
+    @interactor = interactor
   end
 
   Contract nil => <%= klass %>
@@ -21,9 +21,9 @@ class <%= klass %>
   end
 
   class << self
-    Contract Hash => <%= klass %>
-    def call(params)
-      new(params).perform
+    Contract <%= interactor_klass %> => <%= klass %>
+    def perform_now(interactor)
+      new(interactor).perform
     end
   end
 end
